@@ -33,9 +33,6 @@ public class ApplicationPropertiesProducer {
     @Value("${spring.datasource.password}")
     private String password;
 
-    //@Value("${spring.datasource.driver-class-name}")
-    private String driveClassName;
-
     public Long getConnectionTimeOut() {
         return connectionTimeOut;
     }
@@ -70,9 +67,5 @@ public class ApplicationPropertiesProducer {
 
     public String getPassword() {
         return password;
-    }
-
-    public String getDriveClassName() {
-        return driveClassName;
     }
 }
