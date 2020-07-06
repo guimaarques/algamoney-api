@@ -1,6 +1,7 @@
 package com.algaworks.algamoney.api.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 
 @Entity
@@ -11,6 +12,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY) //specify that our table is gonna input values for it
     private Long codigo;
 
+    @NotNull
     private String nome;
 
     public Long getCategoryCode() {
